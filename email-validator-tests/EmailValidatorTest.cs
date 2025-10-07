@@ -10,7 +10,7 @@ public class EmailValidatorTest
     public void IsValidEmailTest()
     {
         const string email = "example@example.com";
-        var isValid = false; // TODO: use Contains "@" && EndsWith ".com" to check if email is valid
+        var isValid = email.Contains("@") && email.EndsWith(".com");
         Assert.That(isValid, Is.True);
     }
 }
